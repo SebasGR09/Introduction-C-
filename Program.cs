@@ -75,6 +75,7 @@
         };
         Console.WriteLine(myDiccionaryPuellaMagi[3]);  // Se busca por key
         ola.Add("Tina", 23);
+        ola.Remove("Sebas");
         Console.WriteLine(ola["Tina"]);
 
 
@@ -84,6 +85,7 @@
         // HashSet, es una estructura (lista) pero desorganizada
         HashSet<int> myHashSet = new HashSet<int>();
         myHashSet.Add(myNumber);
+        myHashSet.Remove(myNumber);
 
         HashSet<String> myHashString = new HashSet<string> { "ReoNa", "Ado", "Aimer", "Lana9", "MafuMafu" };
         //Console.WriteLine(myHashString[0]); Para acceder a estos datos es mejor usar un foreach
@@ -91,7 +93,23 @@
 
 
 
-        // Tuples
+
+        // Tuples no son inmutables, pero se deben definir sus tipos de datos o nombres desde un principio
+        // Por lo que se usa un var cuando deseamos tener una tupla grande con bastantes valores
+        // Caso contrario se ponen los tipos de valores con sus nombres entre parentesis
+
+        // Usando var
+        var myTuple = (3, 3, "MafuMafu", 3.1, 0, true, myHashString);
+        Console.WriteLine($"Tuple with var: {myTuple}");
+
+        // Usando validacion manual ()
+        (int, int num2, double num3, string) numbersTupla = (2, 3, 3.14, "Oliwi");
+        Console.WriteLine($"Tupla without var: {numbersTupla}");
+
+        Console.WriteLine($"Access with tupla variable (4): {numbersTupla.Item4}");
+
+
+
 
 
 
