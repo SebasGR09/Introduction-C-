@@ -25,9 +25,33 @@
 
         // Var, es una nueva forma de asignar variables dinamicas, pero no pueden cambiar durante la ejecucion del programa
         // Se quedan con ese mismo tipo de dato desde que se inicializan
-
         var myString = "Esto es una variable var";
         // myString = 23;  Esto da un error
+
+
+        // Constantes
+        const int myNumber = 212;
+
+
+
+        // Colecciones de datos
+
+        // Array, es inmutable y fuertemente tipado
+        // Se le puede asignar solo el tamaño
+        int[] myArray = new int[3];
+        myArray[0] = 248;
+        myArray[1] = 123;
+        myArray[2] = myNumber;
+        Console.WriteLine($"El valor del array int[2] es: {myArray[2]}");
+
+
+        // Tambien se le puede asignar los datos que tendra de una vez
+        double[] myArrayDouble = new double[] {2.3, 4.3, 5.2, 3.1};
+        Console.WriteLine($"MyArrayDouble in index 0 is: {myArrayDouble[0]}");
+
+
+
+
 
 
 
