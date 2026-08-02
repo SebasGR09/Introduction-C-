@@ -34,6 +34,8 @@
 
 
 
+
+
         // Colecciones de datos
 
         // Array, es inmutable y fuertemente tipado
@@ -44,10 +46,11 @@
         myArray[2] = myNumber;
         Console.WriteLine($"El valor del array int[2] es: {myArray[2]}");
 
-
         // Tambien se le puede asignar los datos que tendra de una vez
-        double[] myArrayDouble = new double[] {2.3, 4.3, 5.2, 3.1};
+        double[] myArrayDouble = new double[] { 2.3, 4.3, 5.2, 3.1 };
         Console.WriteLine($"MyArrayDouble in index 0 is: {myArrayDouble[0]}");
+
+
 
 
 
@@ -73,6 +76,23 @@
         Console.WriteLine(myDiccionaryPuellaMagi[3]);  // Se busca por key
         ola.Add("Tina", 23);
         Console.WriteLine(ola["Tina"]);
+
+
+
+
+
+        // HashSet, es una estructura (lista) pero desorganizada
+        HashSet<int> myHashSet = new HashSet<int>();
+        myHashSet.Add(myNumber);
+
+        HashSet<String> myHashString = new HashSet<string> { "ReoNa", "Ado", "Aimer", "Lana9", "MafuMafu" };
+        //Console.WriteLine(myHashString[0]); Para acceder a estos datos es mejor usar un foreach
+
+
+
+
+        // Tuples
+
 
 
         // Para dejar la consola un ratito
