@@ -51,8 +51,28 @@
 
 
 
+        // Dictionary
+        // Son muy similares a los hashmap de java, pero se ponen los tipos en ambos lados
+        Dictionary<int, string> myDiccionaryPuellaMagi = new Dictionary<int, string>
+        {
+            {0, "Madoka" },
+            {1, "Homura" },
+            {2, "Sayaka" },
+            {3, "Kyouko" },
+            {4, "Mami" }
+        };
 
+        Dictionary<string, int> ola = new Dictionary<string, int>
+        {
+            {"Sandra", 777 },
+            {"Oscar", 248 },
+            {"Alejandro", 25 },
+            {"Sebas", 109 }
 
+        };
+        Console.WriteLine(myDiccionaryPuellaMagi[3]);  // Se busca por key
+        ola.Add("Tina", 23);
+        Console.WriteLine(ola["Tina"]);
 
 
         // Para dejar la consola un ratito
