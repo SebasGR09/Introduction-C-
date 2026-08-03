@@ -86,6 +86,7 @@
         HashSet<int> myHashSet = new HashSet<int>();
         myHashSet.Add(myNumber);
         myHashSet.Remove(myNumber);
+        myHashSet.Add(248);
 
         HashSet<String> myHashString = new HashSet<string> { "ReoNa", "Ado", "Aimer", "Lana9", "MafuMafu" };
         //Console.WriteLine(myHashString[0]); Para acceder a estos datos es mejor usar un foreach
@@ -139,6 +140,35 @@
 
         }
 
+
+        // Condicionales, varian el flujo del programa. Son iguales que en Java
+
+        // If, else if, else
+        if (myHashSet.Count == 0)
+        {
+            Console.WriteLine("El set esta vacio");
+        }
+        else 
+        {
+            Console.WriteLine("El set tiene elementos");
+        }
+
+
+
+        // Switch, igual que Java
+        int day = Convert.ToInt32(Console.ReadLine());
+        switch (day)
+        {
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2: 
+                Console.WriteLine("Tuesday");
+                break;
+            default:
+                Console.WriteLine("Me importa un comino");
+                break;
+        }
 
 
 
