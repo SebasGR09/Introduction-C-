@@ -111,6 +111,35 @@
 
 
 
+        // Bucles
+        // El for es igual que java, nada cambia
+        for(int i = 0; i<=10; i+= 2)
+        {
+            Console.WriteLine(i);
+        }
+
+        // ForEach sirve mucho para recorrer estructuras, todas las anteriormente vistas
+        foreach(int item in myArray)
+        {
+            Console.WriteLine(item);
+        }
+
+        foreach(var itemDiccionary in myDiccionaryPuellaMagi)
+        {
+            Console.WriteLine(itemDiccionary);
+        }
+
+
+        // While, igual que java
+        int iterador = 0;
+        while (iterador <= 10)
+        {
+            Console.WriteLine(iterador);
+            iterador = Convert.ToInt32(Console.ReadLine());  // Convertir un String a Int
+
+        }
+
+
 
 
         // Para dejar la consola un ratito
